@@ -32,6 +32,7 @@
       text-align: center;
     }
 
+    /* Верхняя иконка */
     .icon-wrapper {
       display: flex;
       justify-content: center;
@@ -40,8 +41,9 @@
 
     .icon-wrapper img,
     .icon-wrapper svg {
-      max-width: 100%;
-      height: auto;
+      width: 88px; /* фиксированная ширина */
+      height: 88px; /* фиксированная высота */
+      object-fit: contain; /* сохраняет пропорции */
     }
 
     h1 {
@@ -123,7 +125,6 @@
       color: #6b7280;
     }
 
-    /* 📱 MOBILE */
     @media (max-width: 640px) {
       .card {
         padding: 28px 20px;
@@ -170,7 +171,6 @@
 
     <div class="block">
       <div class="label">
-        <!-- Почта -->
         <svg viewBox="0 0 24 24">
           <path d="M4 4h16v16H4z"/>
           <polyline points="22,6 12,13 2,6"/>
@@ -184,7 +184,6 @@
 
     <div class="block">
       <div class="label">
-        <!-- Телефон -->
         <svg viewBox="0 0 24 24">
           <path d="M22 16.92v3a2 2 0 0 1-2.18 2 
                    19.79 19.79 0 0 1-8.63-3.07 
